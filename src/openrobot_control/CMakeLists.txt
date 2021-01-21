@@ -5,7 +5,7 @@ find_package(catkin REQUIRED COMPONENTS
   joy
   roscpp
   std_msgs
-  vesc_msgs
+  openrobot_vesc_msgs
   message_generation
 )
 
@@ -21,7 +21,7 @@ generate_messages(
 
 catkin_package(
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS joy roscpp std_msgs vesc_msgs
+  CATKIN_DEPENDS joy roscpp std_msgs openrobot_vesc_msgs
 )
 
 include_directories(
