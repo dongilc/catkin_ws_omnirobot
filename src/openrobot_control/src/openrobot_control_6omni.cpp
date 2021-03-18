@@ -99,7 +99,7 @@ void TeleopInput::joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
 		joy_cont_mode = DUTY_MODE;
 		vh1_->custom_cmd_type[0] = vh1_->custom_cmd_type[1] = vh1_->custom_cmd_type[2] = vh1_->custom_cmd_type[3] = COMM_SET_DUTY;
 		vh1_->enable.data = true;
-		ROS_INFO("DUTY Control Mode On");
+		ROS_INFO("Duty Control Mode On");
 	}
 	else if(joy->buttons[0]==1 && joy->buttons[1]==1 && joy_cont_mode!=DPS_MODE) {
 		joy_cont_mode = DPS_MODE;
